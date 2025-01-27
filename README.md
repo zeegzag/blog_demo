@@ -21,4 +21,34 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Ruby Commands
+```bash
+rails g controller pages home about
+```
+
+```bash
+rails g scaffold post title body:text
+```
+
+```bash
+rails db:migrate
+```
+
+```bash
+rails c
+
+@post = Post.new(title: "Hello World", body: "This is my first post.")
+@post.save()
+
+@post = Post.new(title: "Hi everyone", body: "This is my second post.")
+
+@post = Post.find(1)
+
+@post = Post.first
+
+@post = Post.last
+
+@post = Post.last(2)
+
+exit
+```
